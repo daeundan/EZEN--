@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/7a72e4068c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+    <style>
+      .background_img {
+        #CGV_logo {
+          width: 113px;
+          height: 53px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <article class="contents">
+      <div class="background_img">
+        <img id="CGV_logo" src="./img/CGV.png" alt="CGV" />
+      </div>
+      <span id="logo_text">DEEP DIVE SPACE</span>
+      <hr />
+      <div class="menu">
+        <ul>
+          <li>영화</li>
+          <li>극장</li>
+          <li>예매</li>
+          <li>스토어</li>
+          <li>이벤트</li> 
+          <li>혜택</li>
+        </ul>
+      </div>
+      <div class="menu_btn">
+        <ul>
+          <button><li>로그인</li></button>
+          <button><li>비회원 예매</li></button>
+          <button><li>비회원 예매확인</li></button>
+        </ul>
+      </div>
+    </article>
+    <div class="login_wrapper">
+      <div class="login_menu">
+        <form
+          method="post"
+          action="http://127.0.0.1:5500/index.html"
+          id="login-form"
+        ></form>
+      </div>
+      <div class="login_box">
+        <h2>Login</h2>
+        <span>아이디, 비밀번호를 입력하신 후, 로그인 버튼을 클릭해주세요.</span>
+        <div class="login_form">
+          <form action="text">
+            <input
+              id="email"
+              type="text"
+              name="userName"
+              placeholder="이메일을 입력해주세요."
+            />
+            <br />
+            <input
+              id="password"
+              type="password"
+              name="userPassword"
+              placeholder="비밀번호를 입력해주세요."
+            />
+            <div class="check_box">
+              <input type="checkbox" id="remember-me" />
+              <label for="remember-me">아이디 저장하기</label>
+            </div>
+            <input type="submit" value="Login" />
+            <hr />
+            <div class="social_login">
+              <h5>소셜로그인</h5>
+              <span>클릭하여 간편하게 로그인하세요</span>
+            </div>
+            <div class="social_icon_img">
+              <img src="./kakao.png" alt="kakao_login" />
+              <img src="./naver.png" alt="naver_login" />
+              <img src="./facebook.png" alt="facebook_login" />
+              <img src="./google.jpeg" alt="google_login" />
+            </div>
+            <hr />
+            <div class="password_find">
+              <h4>비밀번호를 잊으셨나요?</h4>
+              <button>비밀번호 찾기</button>
+            </div>
+            <div class="sign_up">
+              <h4>계정이 없으신가요?</h4>
+              <button>가입하기</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
