@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./script5.js"></script>
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: 22px;
+        & > button {
+          position: absolute;
+          text-align: center;
+          display: block;
+          background: #d7ceaa;
+          color: #fff;
+          font-size: 30px;
+          border: 1px solid #d7ceaa;
+          border-radius: 5px;
+          cursor: pointer;
+          &.btnActive {
+            display: none;
+          }
+        }
+        #modal-box {
+          display: none;
+          #profile {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 60% 60% 70% 60%;
+            padding: 20px 40px;
+            img {
+              width: 400px;
+              border-radius: 60% 60% 70% 60%;
+            }
+            button {
+              position: absolute;
+              top: 20px;
+              right: 100px;
+              /* display: none; */
+              background: #d7ceaa;
+              color: #1d1d1d;
+              border: 10px solid #d7ceaa;
+              border-radius: 5px;
+              cursor: pointer;
+              padding: 2px;
+              .fa-solid {
+                font-size: 500px;
+              }
+            }
+            #desc {
+              ul {
+                /* 1번째 방법
+                display: flex;
+                flex-direction: column;
+                gap: 10px; */
+                /* 2번째 방법
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100px; */
+                padding: 20px;
+              }
+              li {
+                margin: 40px 0;
+                list-style: none;
+                a {
+                  font-size: 12px;
+                  color: #1d1d1d;
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+          &.active {
+            display: block;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button id="open">프로필 보기</button>
+    <div id="modal-box">
+      <div id="profile">
+        <button><i class="fa-solid fa-xmark"></i></button>
+        <img
+          src="https://img9.yna.co.kr/etc/inner/KR/2023/09/01/AKR20230901035200005_01_i_P4.jpg"
+          alt="img"
+        />
+        <div id="desc">
+          <ul>
+            <li><a href="#">이름 : 뉴진스</a></li>
+            <li><a href="#">직업 : 아이돌</a></li>
+            <li><a href="#">취미 : 노래</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
