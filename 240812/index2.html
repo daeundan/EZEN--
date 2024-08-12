@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style2.css" />
+    <script defer src="./script2.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main id="container">
+      <h1>🎊 당첨자 발표 🎊</h1>
+      <form
+        action="http://127.0.0.1:5500/index2.html"
+        method="get"
+        id="lotteryForm"
+      >
+        <label for="number01"
+          ><input type="text" name="number01" id="number01" /> 명 중에서</label
+        >
+        <label for="number02"
+          ><input type="text" name="number02" id="number02" /> 명 뽑기</label
+        >
+        <input type="submit" id="submit" value="추첨" />
+        <input type="reset" value="삭제" />
+        <div id="result">두근두근 과연 누가 당첨일지..! 🧐</div>
+      </form>
+    </main>
+  </body>
+</html>
